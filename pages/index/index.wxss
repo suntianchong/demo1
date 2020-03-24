@@ -1,0 +1,138 @@
+.a {
+   position: absolute;
+   width: 500rpx;
+  height: 460rpx;
+  left: 125rpx;
+  top: 400rpx;
+  border-radius: 50%;
+  background-color: #0BB65A;
+  animation-name: myfirst; /*动画的名称 */
+  animation-duration: 2000ms; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.b{
+  position: absolute;
+  width: 460rpx;
+  height: 500rpx;
+ left: 145rpx;
+ top: 380rpx;
+  border-radius: 50%;
+  background-color: #0BB65A;
+  animation-name: myfirst; /*动画的名称 */
+  animation-duration: 2000ms; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes myfirst {
+  /*开始转的角度*/
+  from {
+    transform: rotate(0deg);
+  }/*结束的角度*/
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*兼容ios*/
+@-webkit-keyframes myfirst {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.c{
+   position: absolute;
+  width: 450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+  background-color: white;
+  top:400rpx;
+  left: 150rpx;
+}
+
+.bottom{
+width: 100rpx;
+height: 50rpx;
+background-color: #0BB65A;
+border-radius: 50% 100% 0 0;
+position: absolute;
+bottom: 0rpx;
+left: 325rpx;
+
+}
+
+.bubble1{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background-color: #0BB651;
+animation-name: up1; /*动画的名称 */
+  animation-duration: 2000ms; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: up1;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.bubble2{
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #0BB651;
+  animation-name: up2; /*动画的名称 */
+  animation-duration: 1500ms; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: up2;
+  -webkit-animation-duration: 1800ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.bubble3{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #0BB651;
+   animation-name: up2; /*动画的名称 */
+  animation-duration: 25000ms; /*动画从开始到结束的时间*/
+  animation-timing-function: linear; /*动画执行快慢的参数*/
+  animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: up2;
+  -webkit-animation-duration: 2500ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes up1 {
+ 0%   { left:330rpx; bottom:0rpx;}
+25%  {left:330rpx; bottom:100rpx;}
+50%  { left:350rpx; bottom:200rpx;}
+75%  {left:360rpx; bottom:350rpx;}
+100% {left:330rpx; bottom:500rpx;}
+}
+@keyframes up2 {
+ 0%   { left:330rpx; bottom:40rpx;}
+25%  {left:300rpx; bottom:120rpx;}
+50%  { left:300rpx; bottom:220rpx;}
+75%  {left:300rpx; bottom:380rpx;}
+100% {left:300rpx; bottom:500rpx;}
+}
+.txt{
+  position: absolute;
+  font-size: 30rpx;
+  left: 180rpx;
+  top:200rpx;
+}
